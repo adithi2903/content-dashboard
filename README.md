@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 Personalized Content Dashboard
 
-## Getting Started
+A dynamic content dashboard built with Next.js, React, Redux Toolkit, and TypeScript. It shows personalized news, movie recommendations, and lets users save favorites, search content, toggle dark mode, and drag-and-drop reorder cards.
 
-First, run the development server:
+---
+
+## 🚀 How to Run This Project
+
+### Prerequisites
+Make sure you have these installed:
+- Node.js (v18 or above)
+- npm
+
+### Steps
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 1. Clone the repo
+git clone https://github.com/YOUR_USERNAME/content-dashboard.git
+
+# 2. Go into the project folder
+cd content-dashboard
+
+# 3. Install all dependencies
+npm install
+
+# 4. Create a .env.local file and add your API keys
+touch .env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Add this to your `.env.local` file:
+```
+NEXT_PUBLIC_NEWS_API_KEY=your_newsapi_key_here
+NEXT_PUBLIC_TMDB_API_KEY=your_tmdb_key_here
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# 5. Run the development server
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Now open [http://localhost:3000](http://localhost:3000) in your browser!
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧪 Running Tests
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Unit + Integration Tests (Jest)
+```bash
+npm test
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### E2E Tests (Cypress)
+```bash
+# Make sure the dev server is running first (npm run dev)
+npx cypress run
 
-## Deploy on Vercel
+# Or open the Cypress UI
+npx cypress open
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Build for Production
+```bash
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📁 Project Structure
+
+```
+content-dashboard/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   └── ui/
+│   │   │       └── ContentCard.tsx
+│   │   ├── page.tsx
+│   │   └── login/
+│   │       └── page.tsx
+│   ├── store/
+│   │   └── slices/
+│   │       ├── authSlice.ts
+│   │       ├── contentSlice.ts
+│   │       └── preferencesSlice.ts
+│   └── __tests__/
+│       ├── ContentCard.test.tsx
+│       ├── authSlice.test.ts
+│       ├── contentSlice.test.ts
+│       └── preferencesSlice.test.ts
+├── cypress/
+│   └── e2e/
+│       └── spec.cy.ts
+└── public/
+```
+
+---
+
+## ✨ Features
+
+- 🔐 Login / Auth flow
+- 📰 Personalized news feed using NewsAPI
+- 🎬 Movie recommendations using TMDB API
+- ❤️ Save to Favorites
+- 🔍 Debounced search
+- 🌙 Dark mode toggle
+- 🔃 Drag and drop card reordering
+- 📱 Responsive layout
+- ✅ 26 unit/integration tests passing
+- ✅ 5/6 E2E tests passing (drag-and-drop interaction verified)
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Usage |
+|---|---|
+| Next.js 16 | Framework |
+| React | UI |
+| TypeScript | Type safety |
+| Redux Toolkit | State management |
+| Tailwind CSS | Styling |
+| Framer Motion | Animations + Drag and Drop |
+| Jest + RTL | Unit testing |
+| Cypress | E2E testing |
+
+---
+
+## 🌐 Live Demo
+
+[Click here to view the live app](https://YOUR_LIVE_LINK_HERE)
+
+---
+
+## 📬 Contact
+
+Made by Adithi — feel free to reach out!
