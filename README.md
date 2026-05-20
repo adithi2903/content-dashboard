@@ -15,34 +15,12 @@ Ensure the following are installed:
 
 ## Installation
 
-```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/content-dashboard.git
-
-# Navigate to the project directory
-cd content-dashboard
-
-# Install dependencies
-npm install
-
-# Create environment variables file
-touch .env.local
-```
-
 Add the following variables to `.env.local`:
 
 ```env
 NEXT_PUBLIC_NEWS_API_KEY=your_newsapi_key_here
 NEXT_PUBLIC_TMDB_API_KEY=your_tmdb_key_here
 ```
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-Open `http://localhost:3000` in your browser.
 
 ---
 
