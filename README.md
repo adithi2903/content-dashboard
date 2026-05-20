@@ -1,73 +1,84 @@
-# 📊 Personalized Content Dashboard
+# Personalized Content Dashboard
 
-A dynamic content dashboard built with Next.js, React, Redux Toolkit, and TypeScript. It shows personalized news, movie recommendations, and lets users save favorites, search content, toggle dark mode, and drag-and-drop reorder cards.
+A dynamic content dashboard built with Next.js, React, Redux Toolkit, and TypeScript. The application provides personalized news, movie recommendations, content search, saved favorites, dark mode support, and drag-and-drop card reordering.
 
 ---
 
-## 🚀 How to Run This Project
+# How to Run the Project
 
-### Prerequisites
-Make sure you have these installed:
-- Node.js (v18 or above)
-- npm
+## Prerequisites
 
-### Steps
+Ensure the following are installed:
+
+* Node.js (v18 or later)
+* npm
+
+## Installation
 
 ```bash
-# 1. Clone the repo
+# Clone the repository
 git clone https://github.com/YOUR_USERNAME/content-dashboard.git
 
-# 2. Go into the project folder
+# Navigate to the project directory
 cd content-dashboard
 
-# 3. Install all dependencies
+# Install dependencies
 npm install
 
-# 4. Create a .env.local file and add your API keys
+# Create environment variables file
 touch .env.local
 ```
 
-Add this to your `.env.local` file:
-```
+Add the following variables to `.env.local`:
+
+```env
 NEXT_PUBLIC_NEWS_API_KEY=your_newsapi_key_here
 NEXT_PUBLIC_TMDB_API_KEY=your_tmdb_key_here
 ```
 
+Start the development server:
+
 ```bash
-# 5. Run the development server
 npm run dev
 ```
 
-Now open [http://localhost:3000](http://localhost:3000) in your browser!
+Open `http://localhost:3000` in your browser.
 
 ---
 
-## 🧪 Running Tests
+# Running Tests
 
-### Unit + Integration Tests (Jest)
+## Unit and Integration Tests
+
 ```bash
 npm test
 ```
 
-### E2E Tests (Cypress)
-```bash
-# Make sure the dev server is running first (npm run dev)
-npx cypress run
+## End-to-End Tests
 
-# Or open the Cypress UI
+Ensure the development server is running before executing Cypress tests.
+
+```bash
+npx cypress run
+```
+
+To open the Cypress UI:
+
+```bash
 npx cypress open
 ```
 
-### Build for Production
+## Production Build
+
 ```bash
 npm run build
 ```
 
 ---
 
-## 📁 Project Structure
+# Project Structure
 
-```
+```text
 content-dashboard/
 ├── src/
 │   ├── app/
@@ -95,42 +106,46 @@ content-dashboard/
 
 ---
 
-## ✨ Features
+# Features
 
-- 🔐 Login / Auth flow
-- 📰 Personalized news feed using NewsAPI
-- 🎬 Movie recommendations using TMDB API
-- ❤️ Save to Favorites
-- 🔍 Debounced search
-- 🌙 Dark mode toggle
-- 🔃 Drag and drop card reordering
-- 📱 Responsive layout
-- ✅ 26 unit/integration tests passing
-- ✅ 5/6 E2E tests passing (drag-and-drop interaction verified)
-
----
-
-## 🛠 Tech Stack
-
-| Technology | Usage |
-|---|---|
-| Next.js 16 | Framework |
-| React | UI |
-| TypeScript | Type safety |
-| Redux Toolkit | State management |
-| Tailwind CSS | Styling |
-| Framer Motion | Animations + Drag and Drop |
-| Jest + RTL | Unit testing |
-| Cypress | E2E testing |
+* Authentication flow
+* Personalized news feed using NewsAPI
+* Movie recommendations using TMDB API
+* Favorites management
+* Debounced search functionality
+* Dark mode support
+* Drag-and-drop card reordering
+* Responsive layout
+* Unit and integration testing with Jest and React Testing Library
+* End-to-end testing with Cypress
 
 ---
 
-## 🌐 Live Demo
+# Tech Stack
 
-[Click here to view the live app](https://YOUR_LIVE_LINK_HERE)
+| Technology                   | Purpose                      |
+| ---------------------------- | ---------------------------- |
+| Next.js 16                   | Framework                    |
+| React                        | UI Library                   |
+| TypeScript                   | Type Safety                  |
+| Redux Toolkit                | State Management             |
+| Tailwind CSS                 | Styling                      |
+| Framer Motion                | Animations and Drag-and-Drop |
+| Jest + React Testing Library | Unit and Integration Testing |
+| Cypress                      | End-to-End Testing           |
 
 ---
 
-## 📬 Contact
+# Live Demo
 
-Made by Adithi — feel free to reach out!
+Add your deployed application link here:
+
+```text
+https://YOUR_LIVE_LINK_HERE
+```
+
+---
+
+# Contact
+
+Developed by Adithi.
