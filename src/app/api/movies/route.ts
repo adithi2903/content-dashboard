@@ -1,8 +1,10 @@
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const type = searchParams.get('type'); // 'discover', 'trending', 'search'
+  const type = searchParams.get('type');
   const query = searchParams.get('q') || '';
   const genres = searchParams.get('genres') || '28';
 
